@@ -175,6 +175,13 @@ nav ul li {
   width: 50%;
 }
 
+/* PDF IFRAME */
+iframe {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+}
+/* PDF IFRAME */
 
 /* SERVICES */
 .services{
