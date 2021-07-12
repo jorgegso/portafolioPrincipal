@@ -7,8 +7,8 @@
 :root {
   --font-family1:'Lato', sans-serif;
   --font-size-titles: 2rem;
-  --font-size-nav: 1.3rem;
-  --font-size-p:1.5rem;
+  --font-size-nav: 1rem;
+  --font-size-p:1.1rem;
   --font-size-p-500px:1.5rem;
   --margin-botton:5rem;
   --margin-txt:1rem;
@@ -154,22 +154,22 @@ div .grid{
   background-color: var(--green-font); /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.2rem 0.3rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  border-radius: 10px;
+  font-size: var(--font-size-h2);
+  border-radius: 0.5rem;
   margin-top: var(--margin-top);
 }
 
 #cv {
   text-align: center;
-  font-size: 21px;
+  font-size: var(--font-size-h2);
 }
 #cv i {
-  font-size: 18px;
-  margin-left: 15px;
+  font-size: 1rem;
+  margin-left: 0.5rem;
 }
 
 
