@@ -49,10 +49,6 @@ p {
     font-size: var(--font-size-titles);
 }
 
-/* ICON ABOUT ME  */
-.fab, .fas {
-  font-size: var(--size-icons);
-}
 
 /* HEADER */
 header {
@@ -123,7 +119,6 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
   margin-left: 8rem;
   margin-right: 8rem;
   margin-bottom: var(--margin-botton); 
@@ -144,7 +139,11 @@ nav ul li {
   justify-content: center;
 }
 
-div .grid{
+.fab, .fas {
+  font-size: var(--size-icons);
+}
+
+.about div .grid{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   margin-left: 2rem;
@@ -172,10 +171,10 @@ div .grid{
   margin-left: 0.5rem;
 }
 
-
 .box_small {
   width: 50%;
 }
+
 
 /* SERVICES */
 .services{
@@ -327,6 +326,32 @@ div .grid{
   .background {
     height: auto;
   }
+
+  /* SERVICES */
+  .services{
+    text-align: center;
+    margin-bottom: var(--margin-botton);
+    margin-top: var(--margin-top);
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .services h1{
+    margin:6vh; 
+  }
+
+  .services h2{
+    margin: 4vh;
+  }
+
+  .grid_service {
+    display: grid;
+    grid-template-columns: 50%  50% ;
+  }
+
+  .card_services {
+    margin-top: var(--margin-top-card-service);
+  }
   /* CARD PRESENTATION */
   .presentation{
     display: flex;
@@ -380,15 +405,52 @@ div .grid{
     min-width: 100%;
   }
 
+  /* ABOUT */
+  .about {
+    text-align: center;
+    margin:0;
+  }
   .about .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 3rem;
+    align-items: center;
   }
-  .box_small{
-    width: 100%; 
+
+  .fab, .fas {
+    font-size: var(--size-icons);
   }
+
+  .about div .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .about div .grid i{
+    margin-bottom: 1.5rem;
+  }
+  .button1 {
+    background-color: var(--green-font); /* Green */
+    border: none;
+    color: white;
+    padding: 0.2rem 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  #cv i {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .box_small {
+    width: 90%;
+  }
+  /* about */
+
   .services {
     margin: 3rem;
   }
