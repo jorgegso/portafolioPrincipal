@@ -22,6 +22,7 @@
   --hover-button:#38b651;
   --hover-icon:red;
   --icon-size:3rem;
+  --icon-size-cv:1.9rem;
 }
 
 body {
@@ -148,7 +149,10 @@ nav ul li {
 .fab, .fas {
   font-size: var(--icon-size);
 }
-.fab:hover, .fas:hover{
+
+/* HOVER ICONS */
+
+.contact_icon .fab:hover, .contact_icon .fas:hover{
   color:var(--hover-icon);
 }
 
@@ -158,36 +162,44 @@ nav ul li {
   margin-left: 2rem;
 }
 
-.button1 {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid var(--hover-button);
-    margin:0 0.3em 0.3em 0;
-    border-radius:10px;
-    font-weight:300;
-    text-align:center;
-    transition: all 0.9s;
-    background: var(--green-font);
-    color: var(--white-font);
-}
-  
-.button1:hover{
-  background-color:var(--hover-button);
-}
 
-#cv {
-  text-align: center;
-  font-size: var(--h2);
-}
-#cv i {
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
 
 .box_small {
   width: 50%;
 }
 
+/* BUTTON */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin-top: var(--margin-top);
+  }
+
+.button1 {
+  cursor: pointer;
+  font-weight:300;
+  padding:0.35em 1.2em;
+  border:none;
+  border-radius:10px;
+  transition: all 0.9s;
+  box-shadow: 0 0.1rem var(--white-font);
+  background: var(--green-font);
+  color: var(--white-font);
+  font-size: var(--h2);
+}
+  
+.button1:hover{
+  background-color:var(--hover-button);
+}
+#cv {
+  font-size: var(--h2);
+}
+#cv i {
+  font-size: var(--icon-size-cv);
+  margin-left: 0.5rem;
+}
 /* PDF IFRAME */
 iframe {
   width: 100%;
@@ -236,6 +248,18 @@ iframe {
   height: auto;
   margin-top: 1rem;
 }
+.portafolio .gallery .box img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  height: auto;
+}
+.portafolio .gallery .box img:hover {
+  transform: scale(0.9);
+  
+}
+
+
 
 .portafolio h1{
   font-size: var(--h1);
@@ -419,8 +443,10 @@ iframe {
   /* SKILLS */
   
   .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align:center;
-    margin-bottom: 3rem;
   }
   
   .gallery {
