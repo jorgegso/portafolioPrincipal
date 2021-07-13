@@ -378,7 +378,30 @@ iframe {
   }
 
   header {
+    padding: 0;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar {
+    background:var(--hover-button);
+  }
+nav ul li {
+  width: 100vw;
+  height: 100%
+}
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav ul a {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  header .navbar a:hover {
+    color:var(--black)
   }
 
   html {
@@ -456,10 +479,6 @@ iframe {
 
   .gallery .box {
     padding: 0;
-  }
-  
-  .navbar {
-    display: none;
   }
 
   .nav_logo {
