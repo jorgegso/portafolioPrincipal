@@ -4,24 +4,25 @@
   box-sizing: border-box;
   transition: all ease-out 0.9s;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 :root {
   --font-family1:'Lato', sans-serif;
+  --font-size-nav: 1rem;
   --h1:3rem;
   --h2:2.2rem;
   --p:1.1rem;
-  --font-size-nav: 1rem;
   --h1-500px:1.5rem;
   --margin-botton:5rem;
   --margin-txt:1rem;
   --margin-top:30vh;
   --margin-top-card-service: 15vh;
-  --white-font:rgb(255, 255, 255);
-  --green-font:#06e32d;
-  --black-background:#000;
-  --hover-button:#38b651;
-  --hover-icon:red;
-  --icon-size:3rem;
+  --black-background:#1d3557;
+  --white-font:#f1faee;
+  --green-font:#e63946;
+  --hover-button:#457b9d;
+  --hover-icon:#457b9d;
+  --icon-size:6rem;
   --icon-size-cv:1.9rem;
 }
 
@@ -53,19 +54,19 @@ p {
   font-size: var(--font-size-titles);
 }
 
-
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 7rem ;
+  padding: 1rem;
 }
 
 header h1 {
   color: var(--green-font);
   font-size: var(--h1);
 }
+
 /* NAVBAR */
 .navbar ul li a:hover {
   color:var(--green-font);
@@ -97,7 +98,7 @@ nav ul li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 84vh;
+  height: 100vh;
 }
 
 .presentation img {
@@ -112,11 +113,6 @@ nav ul li {
   font-size: 1.1rem;
 }
 
-/* 
-.presentation_card_text h2 {
-  margin-bottom: 2vh;
-} */
-
 /* ABOUT */
 .about {
   display: flex;
@@ -127,6 +123,7 @@ nav ul li {
   margin-right: 8rem;
   margin-bottom: var(--margin-botton); 
   margin-top: var(--margin-top);
+  height: 100vh;
 }
 
 .about h1{
@@ -137,6 +134,7 @@ nav ul li {
 .about h2{
   margin: 4vh;
   font-size: var(--h2);
+  text-align: center;
 }
 
 .about .box {
@@ -151,7 +149,6 @@ nav ul li {
 }
 
 /* HOVER ICONS */
-
 .contact_icon .fab:hover, .contact_icon .fas:hover{
   color:var(--hover-icon);
 }
@@ -161,8 +158,6 @@ nav ul li {
   grid-template-columns: 33% 33% 33%;
   margin-left: 2rem;
 }
-
-
 
 .box_small {
   width: 50%;
@@ -193,20 +188,22 @@ nav ul li {
 .button1:hover{
   background-color:var(--hover-button);
 }
+
 #cv {
   font-size: var(--h2);
 }
+
 #cv i {
   font-size: var(--icon-size-cv);
   margin-left: 0.5rem;
 }
+
 /* PDF IFRAME */
 iframe {
   width: 100%;
   height: 100vh;
   border: 0;
 }
-/* PDF IFRAME */
 
 /* SERVICES */
 .services{
@@ -218,7 +215,7 @@ iframe {
 }
 
 .services h1{
-  margin:6vh; 
+  margin:1vh; 
   font-size: var(--h1);
 }
 
@@ -237,7 +234,6 @@ iframe {
 }
 
 /* PORTAFOLIO */
-/* gallery */
 .portafolio {
   margin-top: var(--margin-top);
   text-align: center;
@@ -248,18 +244,18 @@ iframe {
   height: auto;
   margin-top: 1rem;
 }
+
 .portafolio .gallery .box img {
   width: 100%;
   transform: scale(1);
   transition: 0.3s ease-in-out;
   height: auto;
 }
+
 .portafolio .gallery .box img:hover {
   transform: scale(0.9);
   
 }
-
-
 
 .portafolio h1{
   font-size: var(--h1);
@@ -284,16 +280,22 @@ iframe {
 
 /* CERTIFICATE */
 .certificates{
+  flex-direction: column;
   text-align: center;
   margin-bottom: var(--margin-botton);
-  margin-top:var(--margin-top);
+  margin-top: var(--margin-top);
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
 .certificates img {
   width: 50%;
 }
 
 .certificates h1{
-  margin:6vh;
+  margin:1vh;
   font-size: var(--h1);
 }
 
@@ -313,6 +315,7 @@ iframe {
 .contact a{
   color: black;   
 }
+
 .contact a:hover{
   color:var(--hover-icon);
   transition: all ease 0.9s;
@@ -333,14 +336,11 @@ iframe {
 }
 
 .contact_box a {
-  width: 30vh;
-  background-color: dimgray;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  border-radius: 50%;
+  color:var(--white-font)
 }
 
 .iconify {
@@ -360,21 +360,32 @@ iframe {
   margin:0.4rem; 
 }
 
+@media screen and (max-width: 947px){
+  header {
+    display: fles;
+    flex-direction: column;
+  }
+  header .nav_logo {
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+}
 
 /* MEDIA QUERYS */
 @media screen and (max-width: 700px){
   :root {
     --font-family1:'Lato', sans-serif;
     --font-size-nav: 1rem;
-    --h1:1.9rem;
-    --h2:1.2rem;
-    --p:1rem;
+    --h1:3rem;
+    --h2:2.5rem;
+    --p:1.5rem;
     --margin-botton:1rem;
     --margin-txt:1rem;
-    --margin-top:0.1rem;
-    --margin-top-card-service: 2rem;
+    --margin-top:20rem;
+    --margin-top-card-service: 25rem;
     --icon-size:5rem;
-    /* --hover-icon:red; */
   }
 
   header {
@@ -383,16 +394,16 @@ iframe {
     display: flex;
     flex-direction: column;
   }
+
   header .navbar {
     background:var(--hover-button);
   }
-nav ul li {
-  width: 100vw;
-  height: 100%
-}
+
+  /* bar abierta */
   header nav ul {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 
   header nav ul a {
@@ -404,22 +415,34 @@ nav ul li {
     color:var(--black)
   }
 
-  html {
-    width: 100%;
-  }
-
-  body {
-    min-width: 100%;
-  }
-
   h1, h2 {
     text-align: center;
   }
 
   h2 {
     font-size: var(--h2);
+    }
+
+   /* CARD PRESENTATION */
+  .presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .presentation img {
+    height: 30vh;
+    width: 30vh;
   }
   
+  .presentation_text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin:0;
+  }
+
   /* SERVICES */
   .services{
     text-align: center;
@@ -430,12 +453,12 @@ nav ul li {
   }
 
   .services h1{
-    margin:6vh; 
+    margin:1vh; 
     font-size: var(--h1);
   }
 
   .services h2{
-    margin: 4vh;
+    margin: 1vh;
     font-size: var(--h2);
   }
 
@@ -448,30 +471,7 @@ nav ul li {
     margin-top: var(--margin-top-card-service);
   }
   
-  /* CARD PRESENTATION */
-  .presentation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .presentation_text{
-    text-align: center;
-    font-size: 1.1rem;
-    margin:0;
-  }
-
-  
   /* SKILLS */
-  
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-  }
-  
   .gallery {
     column-count: 1;
     margin: 0;
@@ -486,35 +486,24 @@ nav ul li {
     text-align: center ;
   }
 
-  /* CONTACT */
-  .contact_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: var(--margin-botton);
-  }
-
-  .contact_box a{
-    margin-top: var(--margin-top);
-    background-color: dimgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background:var(--black-background);
-    color: var(--white-font);
+  /* ICONS */
+  .fab, .fas {
+    font-size: var(--icon-size);
+    text-align: center;
   }
 
   /* ABOUT */
-  .contact_box .fab, .iconify {
+  .contact .fab, .iconify {
     font-size: var(--icon-size);
   }
 
   .about {
     text-align: center;
     margin:0;
+    height: auto;
+    margin-top: var(--margin-top);
   }
+
   .about .box {
     display: flex;
     flex-direction: column;
@@ -522,13 +511,7 @@ nav ul li {
     align-items: center;
   }
 
-
-   /* ICONS */
-  .fab, .fas {
-    font-size: var(--icon-size);
-    text-align: center;
-  }
- 
+  
   .about div .grid{
     display: grid;
     grid-template-columns: 100%;
@@ -540,10 +523,18 @@ nav ul li {
     margin-bottom: 1.5rem;
   }
 
+  /* BUTTON */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+  }
+
   .button1 {
     background-color: var(--green-font); /* Green */
-    border: none;
     color: var(--white-font);
+    border: none;
     padding: 0.2rem 0.3rem;
     text-align: center;
     text-decoration: none;
@@ -560,9 +551,21 @@ nav ul li {
     width: 90%;
   }
 
-  /* about */
+  /* SERVICE */
   .services {
-    margin: 3rem;
+    margin: 1rem;
+    margin-top: var(--margin-top);
+  }
+
+  /* COPYRIGHT */
+  .copyright{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin-top: calc(var(--margin-top) / 3);
+  }
+
+  .copyright p {
+    font-size: var(--p) ;
   }
 }
 
