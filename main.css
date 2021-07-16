@@ -26,6 +26,14 @@
   --icon-size-cv:1.9rem;
 }
 
+.fas:before, .fab:before{
+  font-size: 8rem;
+}
+
+.fa-file-download:before {
+  font-size: 2rem;
+}
+
 body {
   background-color: var(--black-background);
   font-family: var(--font-family1);
@@ -34,75 +42,96 @@ body {
 }
 
 /* HEADER */
-header {
+.menu-container {
   width: 100%;
-  height: 100vh;
-  background-image: url(./img/back1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-nav {
-  height: 100px;
-  width: 100%;
+  margin: 0 auto;
+  padding-left:128px;
+  padding-right: 128px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* margin: 1.5rem 0; */
 }
 
-nav .nav-logo {
-  width: 140px;
-  margin-left:1rem;
+.nav-fullview a {
+  margin-right: 3rem;
 }
 
-nav .nav-btn {
-  font-size:24px;
-  color: #fff;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-nav .nav-menu {
-  position: fixed;
-  width: 100%;
-  height: 0vh;
-  top:100px;
-  background: rgba(0, 0, 0, .95);
-  text-align: center;
-  transition: all .5s;
-}
-
-nav .nav-menu li {
-  display: none;  
-  line-height: 30px;
-  margin: 50px 0;
-  transition: all .5s;
-}
-
-.nav-menu li a {
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.nav-mene li a.active, .nav-menu li a:hover {
-  color: rgb(248, 8, 8);
-  transition: .3s;
-}
-
-#check {
-  display:none;
-}
-
-#check:checked ~ .nav-menu {
-  height: 100vh;
-}
-
-#check:checked ~ .nav-menu li {
+.menu-logo, .menu-icon {
+  z-index: 2; 
+} 
+.menu-icon {
+  position: relative;
   display: block;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  border:none;
+  outline: none;
+  color: white; 
 }
+.fa-bars:before {
+  font-size: 3rem;
+}
+
+
+.menu-icon::before, .menu-icon::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.nav-mobile.is-active {
+  left:0;
+}
+
+.nav-mobile {
+  position:fixed;
+  top:0;
+  /* cambiando el left a 100% desaparece */
+  left:100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-color: #12002f;
+  padding-top: 120px;
+  transition: 0.4s;
+  z-index: 1;  
+}
+
+.nav-mobile a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #1f103f;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.nav-mobile a:hover {
+  background-color: #2414f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PRESENTATION */
 .presentation{
@@ -174,10 +203,6 @@ p {
   justify-content: center;
 }
 
-/* ICONS */
-.fab, .fas {
-  font-size: var(--icon-size);
-}
 
 /* HOVER ICONS */
 .contact_icon .fab:hover, .contact_icon .fas:hover{
@@ -391,33 +416,16 @@ iframe {
   margin:0.4rem; 
 }
 
-@media screen and (min-width: 947px){
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  nav .nav-btn {
+@media screen and (min-width: 1090px){
+  .menu-icon{
     display: none;
   }
-  nav .nav-menu {
-    position: relative;
-    height: 100px;
-    top: 0;
-    background: none;
-    transition: none;
-    text-align: right;
-    margin-right: 50px;
-  }
-
-  nav .nav-menu li {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 20px;
-    transition: all .5s;
+}
+@media screen and (max-width: 1090px){
+  .nav-fullview {
+    display: none;
   }
 }
-
 /* MEDIA QUERYS */
 @media screen and (max-width: 700px){
   :root {
@@ -432,14 +440,9 @@ iframe {
     --margin-top-card-service: 25rem;
     --icon-size:5rem;
   }
-
-  header {
-    padding: 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+ .nav-fullview {
+    display: none;
   }
-
   h1, h2 {
     text-align: center;
   }
@@ -507,11 +510,6 @@ iframe {
   }
 
 
-  /* ICONS */
-  .fab, .fas {
-    font-size: var(--icon-size);
-    text-align: center;
-  }
 
   /* ABOUT */
   .contact .fab, .iconify {

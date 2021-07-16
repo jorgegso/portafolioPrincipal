@@ -18,27 +18,36 @@
 
 <body>
   <header>
-    <nav>
-      <div>
-        <h1 class="nav-logo">PORTA<span class="nac-logo__folio">FOLIO</span></h1>
+    <div class="menu-container">
+      <div class="menu-logo">
+        <h1>PORTAFOLIO</h1>
       </div>
-      <input type="checkbox" id="check">
-      <label for="check" class="nav-btn">
+      <nav class="nav-fullview">
+        <a class="" href="#">HOME</a>
+        <a class="" href="#ABOUTME">ABOUT ME</a>
+        <a class="" href="#SERVICES">SERVICES</a>
+        <a class="" href="#PORTAFOLIO">PORTAFOLIO</a>
+        <a class="" href="#CERTIFICATES">CERTIFICATES</a>
+        <a class="" href="#CONTACT">CONTACT</a>
+      </nav>
+      <button class="menu-icon menu-button--size" id="menu-button--size">
         <i class="fas fa-bars"></i>
-      </label>
+      </button>
+    </div>
 
-      <ul class="nav-menu">
-        <li><a class="nav-menu__active" href="#about">BAOUT ME</a></li>
-        <li><a href="#service">SERVICE</a></li>
-        <li><a href="#portafolio">PORTAFOLI</a></li>
-        <li><a href="#certificates">CERTIFICATES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    
-    <div class="presentation">
+  </header>
+  <nav class="nav-mobile ">
+    <a class="" href="#">HOME</a>
+        <a class="" href="#ABOUTME">ABOUT ME</a>
+        <a class="" href="#SERVICES">SERVICES</a>
+        <a class="" href="#PORTAFOLIO">PORTAFOLIO</a>
+        <a class="" href="#CERTIFICATES">CERTIFICATES</a>
+        <a class="" href="#CONTACT">CONTACT</a>
+  </nav>
+
+  <div class="presentation">
     <div>
-      <img src=" ./img/img1.jpg" alt="">
+      <img src="./img/progilePig.png" alt="">
     </div>
     <div class="presentation_text">
       <h2>Hi</h2>
@@ -46,8 +55,6 @@
       <h2> - Frontend developer - </h2>
     </div>
   </div>
-  </header>
-  
 
   <div class="about" id="ABOUTME">
     <h1 class="title">ABOUT ME</h1>
@@ -136,7 +143,7 @@
     </div>
   </div>
 
-  <div class="certificates">
+  <div class="certificates" id="CERTIFICATES">
     <h1 class="title">CERTIFICATES</h1>
     <!-- <div>line</div> -->
     <p>The Complete Web Developer in 2020: Zero to Mastery</p>
@@ -159,6 +166,7 @@
     <p>&#169; Copyright 2021 - Jorge Sosa &nbsp;</p>
     <p>All rights reserved</p>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
