@@ -3,14 +3,14 @@
   --font-family1: "Lato", sans-serif;
   --font-family2: "Lobster", sans-serif;
   --font-size-nav: 1rem;
-  --h1:3rem;
-  --h2:2.2rem;
-  --p:1.1rem;
-  --h1-500px:1.5rem;
-  --margin-botton:5rem;
-  --margin-txt:1rem;
-  --margin-top:30vh;
-  --margin-top-card-service:3rem;
+  --h1: 3rem;
+  --h2: 2.2rem;
+  --p: 1.1rem;
+  --h1-500px: 1.5rem;
+  --margin-botton: 5rem;
+  --margin-txt: 1rem;
+  --margin-top: 30vh;
+  --margin-top-card-service: 3rem;
   --margin__top--button: 4.5rem;
   --green: #6ef4a8;
   --black: #2d2f33;
@@ -18,9 +18,15 @@
   --white-dark: #b1b1b1;
   --more-black: #27292d;
   --red: #b35553;
-  --blue:#78d9f4;
-  --red-dark:#8d4645;
-  --icon-size:.5rem;
+  --blue: #78d9f4;
+  --red-dark: #8d4645;
+  --icon-size: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -291,7 +297,7 @@ iframe {
   font-size: var(--h1);
 }
 
-.services h2{
+.services h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: var(--h2);
@@ -309,8 +315,6 @@ iframe {
 .card_services {
   margin-top: var(--margin-top-card-service);
 }
-
-
 
 /* SERVICES --end */
 
@@ -472,7 +476,7 @@ iframe {
 }
 
 /* MEDIA QUERYS */
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   :root {
     --font-size-nav: 1rem;
     --h1: 2.1rem;
@@ -488,7 +492,7 @@ iframe {
   .menu-container {
     justify-content: space-around;
     padding: 0;
-    margin:0; 
+    margin: 0;
   }
 
   .nav-fullview {
