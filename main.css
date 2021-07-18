@@ -16,7 +16,7 @@
   --margin-botton:5rem;
   --margin-txt:1rem;
   --margin-top:30vh;
-  --margin-top-card-service: 15vh;
+  --margin-top-card-service:3rem;
   --margin__top--button: 4.5rem;
   --green: #6ef4a8;
   --black: #2d2f33;
@@ -284,8 +284,8 @@ iframe {
   text-align: center;
   margin-bottom: var(--margin-botton);
   margin-top: var(--margin-top);
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .services h1{
@@ -294,8 +294,13 @@ iframe {
 }
 
 .services h2{
-  margin: 4vh;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   font-size: var(--h2);
+}
+
+.services p {
+  padding: 2rem;
 }
 
 .grid_service {
@@ -306,6 +311,8 @@ iframe {
 .card_services {
   margin-top: var(--margin-top-card-service);
 }
+
+
 
 /* SERVICES --end */
 
@@ -471,7 +478,7 @@ iframe {
 }
 
 /* MEDIA QUERYS */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 750px){
   :root {
     --font-size-nav: 1rem;
     --h1:2.1rem;
@@ -535,8 +542,8 @@ iframe {
     text-align: center;
     margin-bottom: var(--margin-botton);
     margin-top: var(--margin-top);
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .services h1{
