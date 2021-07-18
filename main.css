@@ -484,21 +484,26 @@ iframe {
     --icon-size:4.5rem;
   }
 
-  .menu-container {
-    justify-content: space-around;
-    margin:0; 
-  }
+  .menu-logo h1{
+    font-size: 1.5rem;
+  }  
 
-  .nav-fullview {
-    display: none;
-  }
-
-  h1, h2 {
+  h1, h2 {  
     text-align: center;
   }
 
   h2 {
     font-size: var(--h2);
+  }
+
+  .menu-container {
+    justify-content: space-around;
+    margin:0; 
+    padding:0;
+  }
+
+  .nav-fullview {
+    display: none;
   }
 
    /* CARD PRESENTATION */
