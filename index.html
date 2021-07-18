@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="./img/icon_briefcase.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,51 +18,67 @@
 </head>
 
 <body>
-
   <div class="background">
-    <header id="HOME">
-      <h1 class="nav_logo"><a href="#"></a>PORTA<span id="folio">FOLIO</span></a></h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#HOME">HOME</a> </li>
-          <li><a href="#ABOUTME">ABOUT ME</a></li>
-          <li><a href="#SERVICES">SERVICES</a> </li>
-          <li><a href="#PORTAFOLIO">PORTAFOLIO</a> </li>
-          <li><a href="#CONTACT">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="card_box presentation_card">
-      <div>
-        <img src=" ./img/img1.jpg" alt="">
+    <header>
+      <div class="menu-container">
+        <div class="menu-logo">
+          <h1>PORTA<span class="menu-logo__color">FOLIO</span></h1>
+        </div>
+        <nav class="nav-fullview">
+          <a class="" href="#">HOME</a>
+          <a class="" href="#ABOUTME">ABOUT ME</a>
+          <a class="" href="#SERVICES">SERVICES</a>
+          <a class="" href="#PORTAFOLIO">PORTAFOLIO</a>
+          <a class="" href="#CERTIFICATES">CERTIFICATES</a>
+          <a class="" href="#CONTACT">CONTACT</a>
+        </nav>
+        <button class="menu-icon menu-button--size" id="menu-button--size">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <div class="card_text presentation_card_text">
+
+    </header>
+    <nav class="nav-mobile">
+      <a class="nav-link" href="#">HOME</a>
+      <a class="nav-link" href="#ABOUTME">ABOUT ME</a>
+      <a class="nav-link" href="#SERVICES">SERVICES</a>
+      <a class="nav-link" href="#PORTAFOLIO">PORTAFOLIO</a>
+      <a class="nav-link" href="#CERTIFICATES">CERTIFICATES</a>
+      <a class="nav-link" href="#CONTACT">CONTACT</a>
+    </nav>
+
+    <div class="presentation">
+      <div>
+        <img src="./img/progilePig.png" alt="">
+      </div>
+      <div class="presentation_text">
         <h2>Hi</h2>
-        <h2 id="myName">I'm jorge sosa</h2>
-        <h2> - Frontend developer - </h2>
+        <h2 id="myName">I'm jorge Sosa</h2>
+        <h2> - Frontend Developer - </h2>
       </div>
     </div>
   </div>
 
   <div class="about" id="ABOUTME">
-    <h1 class="title">ABOUT ME1</h1>
+    <h1 class="title">ABOUT ME</h1>
     <div class="box">
       <div class="box_small">
-        <h2>WHO I AM</h2>
-        <p>Over the time i have acquired a range of skills os all kinds between programming, video editing and sales. I
-          cant spend a day without trying to lern something new. I worked in Argentina and USA in different fields</p>
+        <h2>Who I Am</h2>
+        <p>&emsp;Over the time i have acquired a range of skills os all kinds between programming, video editing and sales. I
+          cant spend a day without trying to lern something new. I worked in Argentina and USA in different fields.</p>
         <!-- botton que descarga el cv con icon  -->
-        <div class="button">
-          <button class="button1" id="cv">CV<i class="fas fa-file-download"></i></button>
-        </div>
+        <a class="button-box" href="./files/Resume_PersonalWEB.pdf">
+          <button class="button" title="Resume in pdf">
+            <h2>CV</h2>
+          </button>
+        </a>
       </div>
 
       <div class="box_small">
-        <h2>MY SKILLS</h2>
+        <h2>My Skills</h2>
         <div class="grid">
-          <!-- html5  -->
           <div>
-            <i class="fab fa-css3" title="CSS3"></i><!-- css3  -->
+            <i class="fab fa-css3" title="CSS3"></i>
           </div>
           <div>
             <i class="fab fa-html5" title="HTML5"></i>
@@ -69,9 +86,6 @@
           <div>
             <i class="fab fa-js" title="JAVASCRIPTS"></i>
           </div>
-          <!--  github  -->
-          <!-- js -->
-          <!-- node -->
         </div>
       </div>
     </div>
@@ -80,67 +94,69 @@
   <div class="services" id="SERVICES">
     <h1 class="title">SERVICES</h1>
     <!-- barrra -->
-    <h2>rvices that a offert to my clients</h2>
+
     <div class="grid_service">
       <div class="card_services">
         <i class="fas fa-paint-brush"></i>
-        <h2 class="services_card_title  margin">DESING</h2>
+        <h2 class="services_card_title  margin">Desing</h2>
         <p class="margin">Website design, implementation and maintenance.</p>
       </div>
 
       <div class="card_services">
-        <i class="fas fa-mobile-alt"></i>
-        <h2>RESPONSIVE</h2>
-        <p>Responsive Web Design is a technology for creating websites that allows a single design for computers,
-          mobiles and tablets.</p>
+        <i class="fas fa-code"></i>
+        <h2>Develop</h2>
+        <p>Adding interactivity to web pages</p>
       </div>
 
       <div class="card_services">
         <i class="fas fa-laptop-code"></i>
-        <h2>WEB LAYOUT</h2>
+        <h2>Web Layout</h2>
         <p>Web layout consists of transforming the design of a website into a set of files (html, css and js) so that
           web browsers can read them in the browser.</p>
       </div>
 
       <div class="card_services">
-        <i class="fas fa-code"></i>
-        <h2>DEVELOPMENT</h2>
-        <p>Adding interactivity to web pages</p>
+        <i class="fas fa-mobile-alt"></i>
+        <h2>RESPONSIVEesponsive</h2>
+        <p>Responsive Web Design is a technology for creating websites that allows a single design for computers,
+          mobiles and tablets.</p>
       </div>
+
+
     </div>
   </div>
 
-  <div class="portafolio" id="PORTAFOLIO">
-    <h1 class="title">PORTAFOLIO</h1>
+  <div class="portafolio title">
+    <h1>PORTAFOLIO</h1>
     <!-- <div>line</div> -->
     <!-- <h2>Lorem ipsum dolor sit amet.</h2> -->
     <div class="gallery">
-      <a class="box" href="https://jorgegso.github.io/apiMapBox/"><img src="./img/mapbox_react_app.jpg" alt=""
-          title="Map app"></a>
-      <a class="box" href="https://jorgegso.github.io/landingPage/"><img src="./img/landingPage.jpg.png"
+      <a class="box" href="https://jorgegso.github.io/apiMapBox/"><img class="img" src="./img/mapbox_react_app.jpg"
+          alt="" title="Map app"></a>
+      <a class="box" href="https://jorgegso.github.io/landingPage/"><img class="img" src="./img/landingPage.jpg.png"
           alt="Landing page" title="Responsive landing Page"></a>
-      <a class="box" href="https://jorgegso.github.io/robotsfriendss/"><img src="./img/robotBF.jpg" alt=""
+      <a class="box" href="https://jorgegso.github.io/robotsfriendss/"><img class="img" src="./img/robotBF.jpg" alt=""
           title="Find a robot app"></a>
-      <a class="box" href="https://jorgegso.github.io/weatherAppJs/"><img src="./img/timeAPP.jpg" alt=""
+      <a class="box" href="https://jorgegso.github.io/weatherAppJs/"><img class="img" src="./img/timeAPP.jpg" alt=""
           title="Weather app"></a>
-      <a class="box" href="https://ssmart-brainn.herokuapp.com/"><img src="./img/smartFace.jpg" alt=""
+      <a class="box" href="https://ssmart-brainn.herokuapp.com/"><img class="img" src="./img/smartFace.jpg" alt=""
           title="Face detect app"></a>
-      <a class="box" href="https://jorgegso.github.io/apiMapBox/"><img src="./img/mapbox_react_app.jpg" alt=""></a>
+      <a class="box" href="https://jorgegso.github.io/apiMapBox/"><img class="img" src="./img/mapbox_react_app.jpg"
+          alt=""></a>
     </div>
   </div>
 
-  <div class="certificates">
+  <div class="certificates" id="CERTIFICATES">
     <h1 class="title">CERTIFICATES</h1>
     <!-- <div>line</div> -->
-    <h2>The Complete Web Developer in 2020: Zero to Mastery</h2>
+    <p>The Complete Web Developer in 2020: Zero to Mastery</p>
     <div class="certificates_box">
       <div class="certificates_box1"><a href=""><img src="./img/certificate.jpg" alt=""></a></div>
     </div>
   </div>
+
   <div class="contact" id="CONTACT">
     <h1 class="title">CONTACT</h1>
-    <!-- <div>line</div> -->
-    <!-- <h2>Lorem ipsum dolor sit amet.</h2> -->
     <div class="contact_box">
       <a href="https://www.linkedin.com/in/jorge-sosa-6b47141a6" class="contact_icon"><i class="fab fa-github"
           title="Github"></i></a>
@@ -153,6 +169,7 @@
     <p>&#169; Copyright 2021 - Jorge Sosa &nbsp;</p>
     <p>All rights reserved</p>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
