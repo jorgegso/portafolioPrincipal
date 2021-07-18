@@ -534,6 +534,7 @@ iframe {
   .certificates h1 {
     font-size: var(--h1);
   }
+   /* CARD PRESENTATION -- end */
 
   /* SERVICES */
   .services{
@@ -563,7 +564,6 @@ iframe {
     margin-top: var(--margin-top-card-service);
   }
   
-  /* SKILLS */
   .gallery {
     column-count: 1;
     margin: 0;
@@ -618,7 +618,7 @@ iframe {
   }
 
   /* SERVICE */
-  .services {
+  .services  {
     margin: 1rem;
     margin-top: var(--margin-top);
   }
