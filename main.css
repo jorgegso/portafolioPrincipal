@@ -26,7 +26,7 @@
   --red: #b35553;
   --blue:#78d9f4;
   --red-dark:#8d4645;
-  --icon-size:2.5rem;
+  --icon-size:.5rem;
 }
 
 body {
@@ -493,6 +493,7 @@ iframe {
 
   .menu-container {
     justify-content: space-around;
+    padding: 0;
     margin:0; 
   }
 
