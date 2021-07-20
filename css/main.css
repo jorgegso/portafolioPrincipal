@@ -48,7 +48,7 @@ p {
 }
 
 .background {
-  background-image: url(./img/back1.jpg);
+  background-image: url(../img/back1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
