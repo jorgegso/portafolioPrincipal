@@ -16,6 +16,7 @@ or
 
 - 🐅 Form for contact me.
 - 🐉 Page animations.
+- 🦝 Go to home button.
 
 ## What the web looks like
 
