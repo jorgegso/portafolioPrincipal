@@ -458,6 +458,9 @@ iframe {
   .menu-icon {
     display: none;
   }
+  .card_services {
+    padding: 0 90px;
+  }
 }
 
 @media screen and (max-width: 1287px) {
