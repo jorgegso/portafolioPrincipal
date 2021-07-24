@@ -223,6 +223,7 @@ p {
   justify-content: center;
 }
 
+
 .about div .grid {
   display: grid;
   grid-template-columns: 100%;
@@ -231,6 +232,8 @@ p {
 
 .grid div {
   margin: 0 auto;
+  margin-top:1.5rem;
+
 }
 
 .box_small {
@@ -378,6 +381,13 @@ iframe {
 
 .certificates img {
   width: 35%;
+  filter: blur(1.5px);
+  transition: all ease-in-out 0.4s;
+}
+
+.certificates img:hover {
+  filter: blur(0);
+  transform: scale(110%);
 }
 
 .certificates h1 {
